@@ -1,0 +1,22 @@
+---
+import AboutAcordeon from "../utils/AboutAccordion.astro";
+
+---
+
+<section class="mb-section">
+    <header class="mb-8 grid gap-4 md:grid-cols-2 md:gap-8">
+        <h2 class="text-title">
+            Áreas de especialização
+        </h2>
+        <p class="text-sm opacity-50 md:text-base">
+            Com mais de 20 anos de experiência, estamos sempre a melhorar 
+            os nossos conhecimentos para ir ao encontro das suas necessidades.
+        </p>
+    </header>
+    <section class="grid gap-8 md:grid-cols-2">
+        <AboutAcordeon open={1}/>
+        <div class="w-full aspect-square rounded-br-[10rem] overflow-hidden">
+            <img class="w-full h-full object-cover" src="/public/images/buildings/arch_05.png" alt="some building">
+        </div>
+    </section>
+</section>
