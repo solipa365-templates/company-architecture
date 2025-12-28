@@ -1,0 +1,21 @@
+---
+import CheapButton from "../utils/CheapButton.astro";
+import ContactInput from "../utils/ContactInput.astro";
+---
+
+<section class="mb-20">
+	<h2 class="text-title mb-8">Mantenha contato conosco</h2>
+	<form class="grid gap-4 md:grid-cols-2 md:gap-8">
+		<ContactInput id="1" label="name" placeholder="Introduza o seu nome" />
+		<ContactInput id="2" label="company" placeholder="Insira os dados da sua empresa" />
+		<ContactInput id="2" type="email" label="email" placeholder="Insira o seu e-mail" />
+        <div>
+            <span class="block mb-2 opacity-80">serviços</span>
+            <div class="flex items-end gap-4 flex-wrap text-sm">
+                <CheapButton>Arquitetura</CheapButton>
+                <CheapButton>Interiores</CheapButton>
+                <CheapButton>Mobiliário</CheapButton>
+            </div>
+        </div>
+	</form>
+</section>
